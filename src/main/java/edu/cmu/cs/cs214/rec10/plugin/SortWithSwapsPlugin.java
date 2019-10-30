@@ -10,7 +10,7 @@ public class SortWithSwapsPlugin implements GamePlugin {
     private int TEN = 10;
 
     // Describes whether the current move is over
-    public Boolean move = false;
+    public boolean move = false;
 
     // An array of the numbers 1-10
     private int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -95,7 +95,6 @@ public class SortWithSwapsPlugin implements GamePlugin {
     }
 
     public boolean isGameOver() {
-//        System.out.println("here");
 
         // Checks that array is properly sorted
         for (int i = 0; i < 9; i++) {
