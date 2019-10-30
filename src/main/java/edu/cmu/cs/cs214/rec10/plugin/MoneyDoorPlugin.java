@@ -98,8 +98,10 @@ public class MoneyDoorPlugin implements GamePlugin {
     public String getGameOverMessage() {
         if (PlayerScores.get("X") > PlayerScores.get("O")) {
             return "Congratulations X with a score of " + PlayerScores.get("X") + " !";
-        } else {
+        } else if (PlayerScores.get("O") > PlayerScores.get("X")) {
             return "Congratulations O with a score of " + PlayerScores.get("O") + " !";
+        } else {
+            return "Congratulations to nobody, you tied!";
         }
 
 
